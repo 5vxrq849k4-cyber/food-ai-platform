@@ -1,21 +1,19 @@
-# Food AI Analysis Platform - Requirements for Cloud Deployment
-# Usage: pip install -r requirements_cloud.txt
+# Food AI Analysis Platform - Requirements for Streamlit Cloud
+# Python 3.9+
 
-# Core
+# Web Framework
 streamlit>=1.28.0
-numpy>=1.21.0
+
+# Core Data Processing
+numpy>=1.21.0,<2.0.0
 pandas>=1.3.0
 scipy>=1.7.0
+
+# Machine Learning
 scikit-learn>=1.0.0
 
 # Visualization
-plotly>=5.15.1
-matplotlib>=3.5.0
-seaborn>=0.12.0
+plotly>=5.15.0
 
-# File handling
+# File Handling
 openpyxl>=3.0.0
-xlrd>=2.0.0
-
-# Optional - for better performance
-joblib>=1.2.0
