@@ -1,5 +1,5 @@
 """
-食品与AI联合分析平台 - 云端部署版本
+食品与AI联合分析平台 - 云端部署版本 v2.1
 Food & AI Analysis Platform - Cloud Deployment Version
 
 适用于 Streamlit Cloud 部署
@@ -7,6 +7,7 @@ Food & AI Analysis Platform - Cloud Deployment Version
 
 作者: AI Assistant
 日期: 2026-04-29
+更新: v2.1 - 修复依赖问题
 """
 
 import streamlit as st

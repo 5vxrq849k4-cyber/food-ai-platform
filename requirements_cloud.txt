@@ -1,19 +1,7 @@
-# Food AI Analysis Platform - Requirements for Streamlit Cloud
-
-# Web Framework
-streamlit>=1.28.0
-
-# Data Processing
+streamlit
 numpy
 pandas
 scipy
-
-# Machine Learning
 scikit-learn
-
-# Visualization
-plotly>=5.15.0
-
-# File Handling
+plotly
 openpyxl
-xlrd
