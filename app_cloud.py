@@ -1,5 +1,5 @@
 """
-食品与AI联合分析平台 - 云端部署版本 v2.1
+食品与AI联合分析平台 - 云端部署版本 v2.2
 Food & AI Analysis Platform - Cloud Deployment Version
 
 适用于 Streamlit Cloud 部署
@@ -7,7 +7,7 @@ Food & AI Analysis Platform - Cloud Deployment Version
 
 作者: AI Assistant
 日期: 2026-04-29
-更新: v2.1 - 修复依赖问题
+更新: v2.2 - 修复混淆矩阵标签错误
 """
 
 import streamlit as st
@@ -120,7 +120,7 @@ def plot_spectra_plotly(X, wavelengths, title, sample_indices=None,
 
 def plot_confusion_matrix_plotly(y_true, y_pred, classes, title):
     """绘制混淆矩阵"""
-    cm = confusion_matrix(y_true, y_pred, labels=classes)
+    cm = confusion_matrix(y_true, y_pred)
 
     fig = go.Figure(data=go.Heatmap(
         z=cm,
